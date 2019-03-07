@@ -1,0 +1,36 @@
+{
+  "name": "@magic-modules/contact",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "t -p",
+    "format": "f -w",
+    "test": "t",
+    "build": "NODE_ENV=production magic build",
+    "prod": "NODE_ENV=production magic build serve",
+    "dev": "magic dev",
+    "publish": "magic publish",
+    "connect": "magic connect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magic-modules/contact.git"
+  },
+  "author": "Jascha Ehrenreich <jascha@jaeh.at>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/magic-modules/contact/issues"
+  },
+  "homepage": "https://github.com/magic-modules/contact#readme",
+  "devDependencies": {
+    "@magic/core": "github:magic/core",
+    "@magic/test": "0.0.5",
+    "@magic-modules/pre": "github:magic-modules/pre"
+  },
+  "dependencies": {
+    "nodemailer": "5.1.1"
+  }
+}
