@@ -197,8 +197,6 @@ Contact.server = (req, res) => {
       return () => {}
     }
 
-    // config.SMTP.SERVICE = config.SMTP.SERVICE || 'Gmail'
-
     smtpTransport = mailer.createTransport({
       host: config.SMTP.HOST || 'smtp.gmail.com',
       secure: true,
