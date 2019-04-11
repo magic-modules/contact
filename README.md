@@ -1,4 +1,4 @@
-## @magic-modules/pre
+## @magic-modules/contact
 
 a Contact Form for [@magic](https://magic.github.io/core)
 also includes a server lambda that sends emails via smtp
