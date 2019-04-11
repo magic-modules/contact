@@ -46,9 +46,9 @@ Contact.actions = {
   change: e => {
     e.preventDefault()
 
-    const input = e.currentTarget
+    const { name, value } = e.currentTarget
     return {
-      [input.name]: input.value,
+      [name]: value,
     }
   },
 
