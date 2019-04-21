@@ -25,9 +25,10 @@
   },
   "homepage": "https://github.com/magic-modules/contact#readme",
   "devDependencies": {
+    "@magic-modules/gitbadges": "github:magic-modules/gitbadges",
+    "@magic-modules/pre": "github:magic-modules/pre",
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.0.7",
-    "@magic-modules/pre": "github:magic-modules/pre"
+    "@magic/test": "0.0.7"
   },
   "dependencies": {
     "nodemailer": "6.1.1"
