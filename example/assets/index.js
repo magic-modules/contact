@@ -1,4 +1,5 @@
 module.exports = {
-  Pre: require('@magic-modules/pre'),
   Contact: require('../../src/'),
+  Pre: require('@magic-modules/pre'),
+  GitBadges: require('@magic-modules/gitbadges'),
 }

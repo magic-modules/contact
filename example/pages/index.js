@@ -8,6 +8,14 @@ module.exports = {
         ' Contact component. It sends email using any smtp server that allows username/password authentication.',
       ]),
 
+      GitBadges({
+        travis: 'magic-modules/contact',
+        npm: 'magic-modules/contact',
+        greenkeeper: 'magic-modules/contact',
+        appveyor: 'jaeh/contact',
+        coveralls: 'magic-modules/contact',
+      }),
+
       h2('installation'),
       Pre.View(`
 npm install magic-modules/contact`),
