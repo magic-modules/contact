@@ -5,6 +5,12 @@ also includes a server lambda that sends emails via smtp
 
 [demo](https://magic-modules.github.io/contact)
 
+[![NPM version][npm-image]][npm-url]
+[![Linux Build Status][travis-image]][travis-url]
+[![Windows Build Status][appveyor-image]][appveyor-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![Greenkeeper badge](https://badges.greenkeeper.io/magic-modules/contact.svg)](https://greenkeeper.io/)
+
 #### install:
 ```bash
 npm install --save-exact @magic-modules/contact
@@ -59,3 +65,13 @@ const component = {
   View: () => Contact()
 }
 ```
+
+
+[npm-image]: https://img.shields.io/npm/v/@magic-modules/contact.svg
+[npm-url]: https://www.npmjs.com/package/@magic-modules/contact
+[travis-image]: https://api.travis-ci.org/magic-modules/contact.svg?branch=master
+[travis-url]: https://travis-ci.org/magic-modules/contact
+[appveyor-image]: https://img.shields.io/appveyor/ci/jaeh/contact/master.svg
+[appveyor-url]: https://ci.appveyor.com/project/jaeh/contact/branch/master
+[coveralls-image]: https://coveralls.io/repos/github/magic-modules/contact/badge.svg
+[coveralls-url]: https://coveralls.io/github/magic-modules/contact
