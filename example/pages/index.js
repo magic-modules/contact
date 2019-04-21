@@ -5,7 +5,7 @@ module.exports = {
       p([
         'this is the ',
         Link({ to: 'https://github.com/magic-modules' }, '@magic-modules'),
-        ' Contact component',
+        ' Contact component. It sends email using any smtp server that allows username/password authentication.',
       ]),
 
       h2('installation'),
@@ -33,13 +33,13 @@ npm install magic-modules/contact`),
 {
   "SMTP_USER": "@smtp-user",
   "SMTP_PASS": "@smtp-pass",
-  "SMTP_HOST": "smtp.gmail.com"
+  "SMTP_HOST": "smtp.mailserver.com"
 }
 
 // /now-secrets.json
 // !add file to .gitignore
 {
-  "@smtp-user": "your@gmail.com",
+  "@smtp-user": "your@mailserver.com",
   "@smtp-pass": "password"
 }
 `),
