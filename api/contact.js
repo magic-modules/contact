@@ -33,7 +33,6 @@ const lambda = (req, res) => {
     return () => {}
   }
 
-
   try {
     const { from, subject, text } = JSON.parse(req.body)
 
@@ -58,8 +57,7 @@ ${text}`,
 
       smtpTransport.close()
     })
-  }
-  catch(e) {
+  } catch (e) {
     res.writeHead(400, { 'Content-Type': 'text/plain' })
     res.end('Invalid Data')
     return
