@@ -1,4 +1,4 @@
-const Contact = (props = {}, children = []) => (state, actions) => (
+const Contact = (props = {}, children = []) => (state, actions) =>
   form(
     {
       id: 'contact-form',
@@ -12,17 +12,33 @@ const Contact = (props = {}, children = []) => (state, actions) => (
         div([
           label({ for: 'from' }, 'your email'),
           state.contact.errors.includes('from') && div({ class: 'error' }, 'email is required'),
-          input({ onchange: actions.contact.change, type: 'email', name: 'from', value: state.contact.from }),
+          input({
+            onchange: actions.contact.change,
+            type: 'email',
+            name: 'from',
+            value: state.contact.from,
+          }),
         ]),
         div([
           label({ for: 'subject' }, 'subject'),
-          state.contact.errors.includes('subject') && div({ class: 'error' }, 'subject is required'),
-          input({ onchange: actions.contact.change, type: 'text', name: 'subject', value: state.contact.subject }),
+          state.contact.errors.includes('subject') &&
+            div({ class: 'error' }, 'subject is required'),
+          input({
+            onchange: actions.contact.change,
+            type: 'text',
+            name: 'subject',
+            value: state.contact.subject,
+          }),
         ]),
         div([
           label({ for: 'text' }, 'text'),
           state.contact.errors.includes('text') && div({ class: 'error' }, 'text is required'),
-          textarea({ onchange: actions.contact.change, rows: 10, name: 'text', value: state.contact.text }),
+          textarea({
+            onchange: actions.contact.change,
+            rows: 10,
+            name: 'text',
+            value: state.contact.text,
+          }),
         ]),
         ...children,
         div([
@@ -30,9 +46,8 @@ const Contact = (props = {}, children = []) => (state, actions) => (
           input({ onchange: actions.contact.change, type: 'submit', value: 'send email' }),
         ]),
       ]),
-    ]
+    ],
   )
-)
 
 Contact.state = {
   from: '',
@@ -84,7 +99,7 @@ Contact.actions = {
     const xhr = new XMLHttpRequest()
 
     xhr.onreadystatechange = () => {
-      if(xhr.readyState === 4) {
+      if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           actions.sent()
         } else if (xhr.status >= 400 && xhr.status <= 599) {
@@ -210,7 +225,6 @@ Contact.server = (req, res) => {
     return () => {}
   }
 
-
   try {
     const { from, subject, text } = JSON.parse(req.body)
 
@@ -235,8 +249,7 @@ ${text}`,
 
       smtpTransport.close()
     })
-  }
-  catch(e) {
+  } catch (e) {
     res.writeHead(400, { 'Content-Type': 'text/plain' })
     res.end('Invalid Data')
     return

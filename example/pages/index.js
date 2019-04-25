@@ -20,7 +20,6 @@ module.exports = {
       Pre.View(`
 npm install magic-modules/contact`),
 
-
       h2('config'),
       div('configuration includes multiple files.'),
       div([
@@ -71,5 +70,5 @@ Contact(),
       h2('example'),
       div('this is how it looks (this form has no server attached):'),
       Contact(),
-    ])
+    ]),
 }
