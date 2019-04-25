@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "start": "t -p",
-    "format": "f -w --exclude docs",
+    "format": "f -w --exclude docs api",
     "test": "t --exclude docs example config.js api",
     "build": "NODE_ENV=production magic build",
     "prod": "NODE_ENV=production magic build serve",
