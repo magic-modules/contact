@@ -28,7 +28,7 @@
     "@magic-modules/gitbadges": "github:magic-modules/gitbadges",
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.1.0"
+    "@magic/test": "0.1.15"
   },
   "dependencies": {
     "nodemailer": "6.2.1"
