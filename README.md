@@ -9,7 +9,7 @@ also includes a server lambda that sends emails via smtp
 [![Linux Build Status][travis-image]][travis-url]
 [![Windows Build Status][appveyor-image]][appveyor-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
-[![Greenkeeper badge](https://badges.greenkeeper.io/magic-modules/contact.svg)](https://greenkeeper.io/)
+
 
 #### install:
 ```bash
